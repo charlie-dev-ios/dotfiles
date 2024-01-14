@@ -18,4 +18,4 @@ fi
 
 # alias
 alias repo='cd "$(ghq list --full-path | peco)"'
-
+alias ll='ls -laG'
