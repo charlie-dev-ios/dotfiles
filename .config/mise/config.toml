@@ -1,0 +1,5 @@
+[tools]
+neovim = "latest"
+eza = "latest"
+peco = "latest"
+ghq = "latest"

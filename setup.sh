@@ -8,7 +8,6 @@ BASEDIR=$(dirname $0)
 cd $BASEDIR
 
 # prezto関係の設定
-
 ln -snfv ${PWD}/.p10k.zsh ~/.p10k.zsh
 
 cd .prezto/runcoms
@@ -25,7 +24,7 @@ cd ../../
 cp -r fonts/ ~/Library/Fonts
 
 # brewでパッケージのインストール
-PACKAGE_NAMES=("eza" "peco" "ghq")
+PACKAGE_NAMES=("mise")
 
 for PACKAGE_NAME in "${PACKAGE_NAMES[@]}"; do
     if which "${PACKAGE_NAME}" >/dev/null; then
@@ -35,3 +34,8 @@ for PACKAGE_NAME in "${PACKAGE_NAMES[@]}"; do
         brew install ${PACKAGE_NAME}
     fi
 done
+
+# miseで各CLIをインストール
+ln -snfv ${PWD}/.config/mise/config.toml ~/.config/mise/config.toml
+cd ~
+mise i
