@@ -26,6 +26,7 @@ cp -r fonts/ ~/Library/Fonts
 # brewでパッケージのインストール
 PACKAGE_NAMES=("mise")
 
+
 for PACKAGE_NAME in "${PACKAGE_NAMES[@]}"; do
     if which "${PACKAGE_NAME}" >/dev/null; then
         echo "🚀${PACKAGE_NAME} is already installed."
@@ -34,6 +35,9 @@ for PACKAGE_NAME in "${PACKAGE_NAMES[@]}"; do
         brew install ${PACKAGE_NAME}
     fi
 done
+
+# 初回のみ手動でactivate
+eval "$(mise activate zsh)"
 
 # miseで各CLIをインストール
 ln -snfv ${PWD}/.config/mise/config.toml ~/.config/mise/config.toml
