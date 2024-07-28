@@ -40,6 +40,7 @@ done
 # file="/path/to/file"
 
 if ! test -f "~/.config/mise/config.toml"; then
+    mkdir ~/.config/mise
     touch ~/.config/mise/config.toml
 fi
 
