@@ -18,4 +18,5 @@ fi
 
 # alias
 alias repo='cd "$(ghq list --full-path | peco)"'
-alias ll='ls -laG'
+alias ll-old='ls -laG'
+alias ll='eza --icons --git --time-style relative -al'
