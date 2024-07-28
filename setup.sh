@@ -5,18 +5,20 @@
 BASEDIR=$(dirname $0)
 cd $BASEDIR
 
-files=`find ${PWD} -name ".*" -type f -maxdepth 1`
-for file in $files; do
-    # シンボリックリンクを貼る
-    ln -snfv $file ~
-done
+# prezto関係の設定
+ln -snfv .p10k.zsh ~
 
 cd .prezto/runcoms
-files=`find ${PWD} -name ".*" -type f -maxdepth 1`
-for file in $files; do
+runcoms=`find ${PWD} -name ".*" -type f -maxdepth 1`
+for file in $runcoms; do
     # シンボリックリンクを貼る
     echo $file
     ln -snfv $file ~
     # prezto自体にもシンボリックリンクを貼る必要がある
     ln -snfv $file ~/.zprezto/runcoms
 done
+
+# p10k用のフォントのインストール
+cd ../../
+cp -r fonts/ ~/Library/Fonts
+
