@@ -37,11 +37,11 @@ done
 
 
 # グローバル用のconfig.tomlがなければ作成
-if ! [test -d "~/.config/mise"]; then
+if ! [ -d ~/.config/mise ]; then
     mkdir ~/.config/mise
 fi
 
-if ! [test -f "~/.config/mise/config.toml"]; then
+if ! [ -f ~/.config/mise/config.toml ]; then
     touch ~/.config/mise/config.toml
 fi
 
