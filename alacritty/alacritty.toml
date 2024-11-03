@@ -10,8 +10,8 @@ normal = { family = "MesloLGS NF", style = "Regular" }
 bold = { family = "MesloLGS NF", style = "Bold" }
 italic = { family = "MesloLGS NF", style = "Italic" }
 bold_italic = { family = "MesloLGS NF", style = "Bold Italic" }
-
-size = 14
+size = 15
+offset = { x = 0, y = 2 }
 
 [cursor]
 style = { shape = "Beam", blinking = "Never" }
