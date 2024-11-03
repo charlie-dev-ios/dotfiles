@@ -22,3 +22,8 @@ eval "$(mise activate zsh)"
 alias repo='cd "$(ghq list --full-path | peco)"'
 alias ll-old='ls -laG'
 alias ll='eza --icons --git --time-style relative -al'
+
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH=“~/.rd/bin:$PATH”
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
