@@ -1,0 +1,18 @@
+[window]
+padding = { x = 16, y = 16 }
+startup_mode = "Fullscreen"
+
+[scrolling]
+history = 50000
+
+[font]
+normal = { family = "MesloLGS NF", style = "Regular" }
+bold = { family = "MesloLGS NF", style = "Bold" }
+italic = { family = "MesloLGS NF", style = "Italic" }
+bold_italic = { family = "MesloLGS NF", style = "Bold Italic" }
+
+size = 14
+
+[cursor]
+style = { shape = "Beam", blinking = "Never" }
+
