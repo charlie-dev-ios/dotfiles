@@ -12,3 +12,4 @@ if ! [ -d ~/.config/alacritty ]; then
 fi
 
 ln -snfv ${PWD}/alacritty.toml ~/.config/alacritty/alacritty.toml
+ln -snfv ${PWD}/dracula.toml ~/.config/alacritty/dracula.toml
