@@ -20,4 +20,4 @@ for file in $runcoms; do
 done
 
 # p10k用のフォントのインストール
-cp -r ./fonts/ ~/Library/Fonts
+cp -r ${PWD}/fonts/ ~/Library/Fonts
