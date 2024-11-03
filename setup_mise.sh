@@ -12,11 +12,7 @@ if ! [ -d ~/.config/mise ]; then
     mkdir ~/.config/mise
 fi
 
-if ! [ -f ~/.config/mise/config.toml ]; then
-    touch ~/.config/mise/config.toml
-fi
-
 # miseで各CLIをインストール
-ln -snfv ${PWD}/.config/mise/config.toml ~/.config/mise/config.toml
+ln -snfv ${PWD}/mise/config.toml ~/.config/mise/config.toml
 cd ~
 mise i
