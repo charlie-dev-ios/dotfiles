@@ -5,4 +5,5 @@ setup:
 	sh mise/setup.sh
 	sh alacritty/setup.sh
 	sh tmux/setup.sh
+	sh vim/setup.sh
 
