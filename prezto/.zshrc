@@ -22,6 +22,7 @@ eval "$(mise activate zsh)"
 alias repo='cd "$(ghq list --full-path | peco)"'
 alias ll-old='ls -laG'
 alias ll='eza --icons --git --time-style relative -al'
+alias tt='tmux'
 
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
