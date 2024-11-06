@@ -13,11 +13,11 @@ if ! [ -d "${ZDOTDIR:-$HOME}/.zprezto" ]; then
 fi
 
 # prezto関係の設定
-runcoms=`find ${PWD}/prezto -name ".*" -type f -maxdepth 1`
+runcoms=`find ${PWD} -name ".*" -type f -maxdepth 1`
 for file in $runcoms; do
     # シンボリックリンクを貼る
     ln -snfv $file ~
 done
 
 # p10k用のフォントのインストール
-cp -r ${PWD}/fonts/ ~/Library/Fonts
+cp -r ${PWD}/../fonts/ ~/Library/Fonts

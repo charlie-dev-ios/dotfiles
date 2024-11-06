@@ -13,6 +13,6 @@ if ! [ -d ~/.config/mise ]; then
 fi
 
 # miseで各CLIをインストール
-ln -snfv ${PWD}/mise/config.toml ~/.config/mise/config.toml
+ln -snfv ${PWD}/config.toml ~/.config/mise/config.toml
 cd ~
 mise i

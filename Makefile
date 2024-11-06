@@ -1,8 +1,8 @@
 .PHONY: setup
 setup:
-	sh setup_prezto.sh
+	sh prezto/setup.sh
 	sh install_brew_packages.sh
-	sh setup_mise.sh
+	sh mise/setup.sh
 	sh alacritty/setup.sh
 	sh tmux/setup.sh
 
