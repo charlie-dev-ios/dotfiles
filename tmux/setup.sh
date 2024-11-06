@@ -7,4 +7,4 @@ set -Ceu
 BASEDIR=$(dirname $0)
 cd $BASEDIR
 
-ln -snfv ${PWD}/.tmux.conf ~/.tmux.conf
+ln -snfv ${PWD}/.tmux.conf $HOME/.tmux.conf

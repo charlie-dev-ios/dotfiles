@@ -7,9 +7,10 @@ set -Ceu
 BASEDIR=$(dirname $0)
 cd $BASEDIR
 
-if ! [ -d ~/.config/alacritty ]; then
-    mkdir ~/.config/alacritty
+ALACRITTY_DIR=$HOME/.config/alacritty
+if ! [ -d $ALACRITTY_DIR ]; then
+    mkdir $ALACRITTY_DIR
 fi
 
-ln -snfv ${PWD}/alacritty.toml ~/.config/alacritty/alacritty.toml
-ln -snfv ${PWD}/dracula.toml ~/.config/alacritty/dracula.toml
+ln -snfv ${PWD}/alacritty.toml $HOME/.config/alacritty/alacritty.toml
+ln -snfv ${PWD}/dracula.toml $HOME/.config/alacritty/dracula.toml
