@@ -1,10 +1,11 @@
 [general]
 import = [
-    "~/.config/alacritty/dracula.toml"
+    # "~/.config/alacritty/dracula.toml",
+    "~/.config/alacritty/tokyo-night-moon.toml",
 ]
 
 [window]
-padding = { x = 12, y = 12 }
+padding = { x = 0, y = 0 }
 startup_mode = "Fullscreen"
 
 [scrolling]

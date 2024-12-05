@@ -12,5 +12,8 @@ if ! [ -d $ALACRITTY_DIR ]; then
     mkdir $ALACRITTY_DIR
 fi
 
-ln -snfv ${PWD}/alacritty.toml $HOME/.config/alacritty/alacritty.toml
-ln -snfv ${PWD}/dracula.toml $HOME/.config/alacritty/dracula.toml
+# シンボリックリンクを作成
+FILES=`find . -type f ! -name setup.sh | sed 's|\./||'`
+for FILE in $FILES; do
+    ln -snfv ${PWD}/$FILE $ALACRITTY_DIR/$FILE
+done
