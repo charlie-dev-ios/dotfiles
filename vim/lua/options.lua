@@ -57,3 +57,10 @@ opt.clipboard:append({"unnamedplus"})
 
 -- マウス操作の有効化
 opt.mouse = a
+
+-- TrueColor
+opt.termguicolors = true
+
+-- スペルチェック
+vim.opt.spell = true
+vim.opt.spelllang = { 'en_us' }

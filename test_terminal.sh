@@ -13,5 +13,10 @@ printf "\e[1mBold\e[0m\n"
 printf "\e[3mItalic\e[0m\n"
 # Bold Italic
 printf "\e[1;3mBold Italic\e[0m\n"
+
+# Under Curl
+printf "\e[4:3mUnder Curl"
+
 # Reset
 printf "\e[0m\n"
+

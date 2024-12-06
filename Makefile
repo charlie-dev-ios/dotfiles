@@ -6,4 +6,5 @@ setup:
 	sh alacritty/setup.sh
 	sh tmux/setup.sh
 	sh vim/setup.sh
+	sh term/setup.sh
 
