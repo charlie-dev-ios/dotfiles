@@ -3,5 +3,5 @@
 ---------------------------------------
 
 require('keymaps')
-require('plugin')
 require('options')
+require('plugin')
