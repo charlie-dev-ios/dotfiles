@@ -5,4 +5,3 @@
 require('keymaps')
 require('plugin')
 require('options')
-require('color-scheme')
