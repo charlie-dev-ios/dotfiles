@@ -7,4 +7,5 @@ return {
     animation = true,
     tabpages = true,
   },
+  event = "VeryLazy"
 } 

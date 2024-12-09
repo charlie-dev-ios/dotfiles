@@ -14,5 +14,5 @@ return {
   keys = {
     "ga",
   },
-  lazy = false,
-} 
+  lazy = true,
+}
