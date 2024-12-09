@@ -62,5 +62,5 @@ opt.mouse = a
 opt.termguicolors = true
 
 -- スペルチェック
-vim.opt.spell = true
+vim.opt.spell = false
 vim.opt.spelllang = { 'en_us' }

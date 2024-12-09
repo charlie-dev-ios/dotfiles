@@ -12,10 +12,6 @@ map('n', '<Esc><Esc>', ':nohlsearch<CR>', opts)
 
 -- ウィンドウ分割
 map('n', 's', '<C-w>', opts)
-map('n', '<C-w>v', '<C-w>s', opts)
-map('n', '<C-w>s', 'jC-w>v', opts)
-map('n', 'sv', '<C-w>s', opts)
-map('n', 'ss', '<C-w>v', opts)
 map('n', 's<', '4<C-w><', opts)
 map('n', 's>', '4<C-w>>', opts)
 map('n', 's+', '4<C-w>+', opts)
