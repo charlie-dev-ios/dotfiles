@@ -64,3 +64,6 @@ opt.termguicolors = true
 -- スペルチェック
 vim.opt.spell = false
 vim.opt.spelllang = { 'en_us' }
+
+-- 組み合わせキー入力のタイムアウト
+vim.o.timeoutlen = 700
