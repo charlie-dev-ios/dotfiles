@@ -4,6 +4,7 @@ return {
   keys = {
       { "<Leader>ws", "<cmd>SessionSave<CR>" },
       { "<Leader>wr", "<cmd>SessionRestore<CR>" },
+      { "<Leader>wd", "<cmd>SessionDelete<CR>" },
   },
   config = function()
       local auto_session = require("auto-session")
