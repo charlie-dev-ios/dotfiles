@@ -31,6 +31,7 @@ return {
     vim.g.loaded_netrwPlugin = 1
   end,
   opts = {
+    hijack_cursor = true,
     sort = {
         sorter = "case_sensitive",
     },
