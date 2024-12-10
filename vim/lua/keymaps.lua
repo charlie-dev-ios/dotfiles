@@ -17,11 +17,6 @@ map('n', 's>', '4<C-w>>', opts)
 map('n', 's+', '4<C-w>+', opts)
 map('n', 's-', '4<C-w>-', opts)
 
--- バッファ
-map('n', 'T', ':Tex<CR>', opts)
-map('n', 'tl', 'gt', opts)
-map('n', 'th', 'gT', opts)
-
 -- 設定ファイルの読み込み
 local configPath = vim.fn.stdpath('config') .. '/init.lua'
 map(
@@ -29,9 +24,3 @@ map(
     ':source ' .. configPath .. '<CR>', opts
 )
 
--- barbar.nvim
-map('n', '<Leader>l', '<Cmd>BufferNext<CR>', opts)
-map('n', '<Leader>h', '<Cmd>BufferPreviou<CR>', opts)
-map('n', '<Leader>bp', '<Cmd>BufferPick<CR>', opts)
-map('n', '<Leader>bc', '<Cmd>BufferClose<CR>', opts)
-map('n', '<Leader>bac', '<Cmd>BufferCloseAllButCurrentOrPinned<CR>', opts)
