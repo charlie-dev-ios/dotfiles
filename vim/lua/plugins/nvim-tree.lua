@@ -7,6 +7,7 @@ return {
   -- nvim-treeはvim .をvim NeovimTree_1に書き換えてしまう
   -- そのためauto-sessionが正常に動作しなくなる
   -- 対応策として本来はLazyLoadするべきではないが遅延読み込みを行っている
+  -- https://github.com/rmagatti/auto-session/issues/393
   cmd = {
     'NvimTreeOpen',
     'NvimTreeClose',
