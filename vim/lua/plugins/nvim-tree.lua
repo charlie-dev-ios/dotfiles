@@ -39,6 +39,11 @@ return {
     view = {
         width = 35,
     },
+    renderer = {
+       indent_markers = {
+           enable = true,
+       },
+    },
     filters = {
         dotfiles = false,
         custom = {
