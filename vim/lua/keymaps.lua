@@ -12,10 +12,10 @@ map('n', '<Esc><Esc>', ':nohlsearch<CR>', opts)
 
 -- ウィンドウ分割
 map('n', '<Leader>s', '<C-w>', opts)
-map('n', 's<', '4<C-w><', opts)
-map('n', 's>', '4<C-w>>', opts)
-map('n', 's+', '4<C-w>+', opts)
-map('n', 's-', '4<C-w>-', opts)
+map('n', '<Leader>s<', '4<C-w><', opts)
+map('n', '<Leader>s>', '4<C-w>>', opts)
+map('n', '<Leader>s+', '4<C-w>+', opts)
+map('n', '<Leader>s-', '4<C-w>-', opts)
 
 -- 設定ファイルの読み込み
 local configPath = vim.fn.stdpath('config') .. '/init.lua'
