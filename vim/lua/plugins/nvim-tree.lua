@@ -47,7 +47,7 @@ return {
     filters = {
         dotfiles = false,
         custom = {
-            ".git",
+            "^\\.git$",
         },
     },
     git = {
