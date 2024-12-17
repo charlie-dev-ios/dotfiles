@@ -10,10 +10,12 @@ return {
       local auto_session = require("auto-session")
 
       local function restore_nvim_tree()
-          require("nvim-tree.api").tree.toggle({ focus = false })
+          require("nvim-tree.api").tree.open({})
       end
 
       auto_session.setup({
+          auto_save = true,
+          auto_restore = false,
           suppressed_dirs = { 
               '~/',
           },
