@@ -11,6 +11,8 @@ return {
 
       local function restore_nvim_tree()
           require("nvim-tree.api").tree.open({})
+          -- openではfocus = falseを指定できないため手動でウィンドウを移動
+          vim.cmd("wincmd l")
       end
 
       auto_session.setup({
