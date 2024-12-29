@@ -8,7 +8,7 @@ BASEDIR=$(dirname $0)
 cd $BASEDIR
 
 # brewでパッケージのインストール
-PACKAGE_NAMES=("mise" "tmux")
+PACKAGE_NAMES=("mise" "tmux" "fd")
 
 for PACKAGE_NAME in "${PACKAGE_NAMES[@]}"; do
     if which "${PACKAGE_NAME}" >/dev/null; then
