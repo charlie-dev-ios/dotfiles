@@ -13,5 +13,8 @@ return {
   dependencies = {
     "MunifTanjim/nui.nvim",
     "rcarriga/nvim-notify",
-  }
+  },
+  keys = {
+      { "<Leader>nd", "<cmd>Noice dismiss<CR>" },
+  },
 }
