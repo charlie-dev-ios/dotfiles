@@ -4,8 +4,6 @@ return {
   config = function()
     require("textcase").setup({})
     require("telescope").load_extension("textcase")
-
-    local opts = { noremap = true, silent = true }
   end,
   keys = {
     "ga",
@@ -15,5 +13,4 @@ return {
     { "gap", "<cmd>:lua require('textcase').current_word('to_pascal_case')<CR>" },
     { "gad", "<cmd>:lua require('textcase').current_word('to_dash_case')<CR>" },
   },
-  lazy = true,
 }
