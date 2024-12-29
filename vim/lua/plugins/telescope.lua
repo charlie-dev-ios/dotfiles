@@ -11,6 +11,8 @@ return {
         { "<Leader>ff", "<cmd>lua require'telescope.builtin'.live_grep {}<CR>" },
         { "<Leader>fh", "<cmd>lua require'telescope.builtin'.help_tags {}<CR>" },
         { "<Leader>fr", "<cmd>lua require'telescope.builtin'.registers {}<CR>" },
+        { "<Leader>fb", "<cmd>lua require'telescope.builtin'.builtin {}<CR>" },
+        { "<Leader>fc", "<cmd>lua require'telescope.builtin'.commands {}<CR>" },
     },
     config = function()
         local actions = require("telescope.actions")
