@@ -10,6 +10,7 @@ return {
         { "<Leader>fo", "<cmd>lua require'telescope.builtin'.find_files {}<CR>" },
         { "<Leader>ff", "<cmd>lua require'telescope.builtin'.live_grep {}<CR>" },
         { "<Leader>fh", "<cmd>lua require'telescope.builtin'.help_tags {}<CR>" },
+        { "<Leader>fr", "<cmd>lua require'telescope.builtin'.registers {}<CR>" },
     },
     config = function()
         local actions = require("telescope.actions")
@@ -28,7 +29,8 @@ return {
             defaults = {
                 mappings = {
                     i = {
-                        ["<esc>"] = actions.close
+                        ["<esc>"] = actions.close,
+                        ["<C-h>"] = "which_key",
                     },
                 },
                 path_display = { "smart" },
