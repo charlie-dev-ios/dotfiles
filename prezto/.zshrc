@@ -1,3 +1,8 @@
+# tmux内ではない場合はtmuxを起動
+if [ -z "$TMUX" ]; then
+  tmux new-session -A -s session1
+fi
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -24,7 +29,7 @@ alias ll-old='ls -laG'
 alias ll='eza --icons --git --time-style relative -al'
 alias tt='tmux'
 alias vim='nvim'
-
+alias dotfiles='setup_tmux_dotfiles.sh'
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="$HOME/.rd/bin:$PATH"

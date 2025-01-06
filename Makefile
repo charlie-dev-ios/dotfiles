@@ -7,4 +7,5 @@ setup:
 	sh tmux/setup.sh
 	sh vim/setup.sh
 	sh term/setup.sh
+	sh functions/setup.sh
 
