@@ -9,4 +9,5 @@ setup:
 	sh term/setup.sh
 	sh functions/setup.sh
 	zsh env/setup.sh
+	zsh ghostty/setup.sh
 
