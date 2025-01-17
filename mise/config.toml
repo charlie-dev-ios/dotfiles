@@ -1,8 +1,9 @@
 [tools]
-neovim = "latest"
+neovim = "nightly"
 eza = "latest"
 peco = "latest"
 ghq = "latest"
+"aqua:BurntSushi/ripgrep" = "latest"
 
 [settings]
 experimental = true
