@@ -33,6 +33,8 @@ return {
                     i = {
                         ["<esc>"] = actions.close,
                         ["<C-h>"] = "which_key",
+                        ["<C-k>"] = actions.move_selection_previous,
+                        ["<C-j>"] = actions.move_selection_next,
                     },
                 },
                 path_display = { "smart" },
