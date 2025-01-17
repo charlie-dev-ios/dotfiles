@@ -76,25 +76,25 @@ local function layout()
   ---@return table
   lazycache.mru = function()
     local result = {}
-    for _, filename in ipairs(vim.v.oldfiles) do
-      if vim.loop.fs_stat(filename) ~= nil then
-        local icon, hl = require("nvim-web-devicons").get_icon(filename, vim.fn.fnamemodify(filename, ":e"))
-        local filename_short = string.sub(vim.fn.fnamemodify(filename, ":t"), 1, 30)
-        table.insert(
-          result,
-          button(
-            tostring(#result + 1),
-            string.format("%s  %s", icon, filename_short),
-            string.format("<Cmd>e %s<CR>", filename),
-            nil,
-            { hl = { { hl, 0, 3 }, { "Normal", 5, #filename_short + 5 } } }
-          )
-        )
-        if #result == 9 then
-          break
-        end
-      end
-    end
+    -- for _, filename in ipairs(vim.v.oldfiles) do
+    --   if vim.loop.fs_stat(filename) ~= nil then
+    --     local icon, hl = require("nvim-web-devicons").get_icon(filename, vim.fn.fnamemodify(filename, ":e"))
+    --     local filename_short = string.sub(vim.fn.fnamemodify(filename, ":t"), 1, 30)
+    --     table.insert(
+    --       result,
+    --       button(
+    --         tostring(#result + 1),
+    --         string.format("%s  %s", icon, filename_short),
+    --         string.format("<Cmd>e %s<CR>", filename),
+    --         nil,
+    --         { hl = { { hl, 0, 3 }, { "Normal", 5, #filename_short + 5 } } }
+    --       )
+    --     )
+    --     if #result == 9 then
+    --       break
+    --     end
+    --   end
+    -- end
     return result
   end
 
