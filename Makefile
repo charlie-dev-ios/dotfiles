@@ -8,4 +8,5 @@ setup:
 	sh vim/setup.sh
 	sh term/setup.sh
 	sh functions/setup.sh
+	zsh env/setup.sh
 
