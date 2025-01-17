@@ -3,9 +3,9 @@
 set -Ceu
 
 tmux new-session -A -s dotfiles -d
-tmux split-window -t dotfiles -v
-tmux send-keys -t dotfiles:0.0 "cd '$(ghq list --full-path | grep dotfiles)'" C-m
-tmux send-keys -t dotfiles:0.0 "vim" C-m
-tmux resize-pane -t dotfiles:0.0 -D 20
-tmux resize-pane -t dotfiles:0.0 -Z
+tmux rename-window -t dotfiles:0 nvim
+tmux new-window -t dotfiles -n zsh
+tmux select-window -t dotfiles:0
+tmux send-keys -t dotfiles "cd '$(ghq list --full-path | grep dotfiles)'" C-m
+tmux send-keys -t dotfiles "vim" C-m
 tmux attach-session -t dotfiles
