@@ -4,6 +4,7 @@ eza = "latest"
 peco = "latest"
 ghq = "latest"
 "aqua:BurntSushi/ripgrep" = "latest"
+tree-sitter = "latest"
 
 [settings]
 experimental = true
