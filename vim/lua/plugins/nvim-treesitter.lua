@@ -4,9 +4,8 @@ return {
     event = { "BufNewFile", "BufRead" },
     config = function () 
         local configs = require("nvim-treesitter.configs")
-
         configs.setup({
-            ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "html", "swift" },
+            ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "html", "swift", "bash", "regex"},
             sync_install = false,
             auto_install = true,
             highlight = { enable = true },
