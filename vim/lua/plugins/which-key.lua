@@ -1,5 +1,5 @@
 return {
-  "folke/which-key.nvim",
+  "charlie-dev-ios/which-key.nvim",
   event = "VeryLazy",
   opts = {
     preset = "modern",
