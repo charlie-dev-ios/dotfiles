@@ -26,4 +26,8 @@ map(
     ':source ' .. configPath .. '<CR>', opts
 )
 
+vim.keymap.set("i", "<C-o>", function()
+    -- vim.cmd("startinsert!")
+    vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Esc>", true, true, true), 'n', false) 
+end)
 
