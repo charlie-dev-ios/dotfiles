@@ -7,18 +7,18 @@ return {
         configs.setup({
             ensure_installed = {
                 -- default
-                "lua"
-                "vim"
-                "vimdoc"
-                "query"
-                "elixir"
-                "heex"
-                "javascript"
-                "html"
-                -- optional
-                "swift"
-                "bash"
-                "regex"
+                "lua",
+                "vim",
+                "vimdoc",
+                "query",
+                "elixir",
+                "heex",
+                "javascript",
+                "html",
+                -- optional,
+                "swift",
+                "bash",
+                "regex",
             },
             sync_install = true,
             auto_install = false,
