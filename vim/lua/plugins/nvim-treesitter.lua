@@ -2,7 +2,7 @@ return {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
     event = { "BufNewFile", "BufRead" },
-    config = function () 
+    config = function ()
         local configs = require("nvim-treesitter.configs")
         configs.setup({
             ensure_installed = {
@@ -23,7 +23,7 @@ return {
             sync_install = true,
             auto_install = false,
             highlight = { enable = true },
-            indent = { enable = true },  
+            indent = { enable = true },
         })
     end
 }
