@@ -24,7 +24,7 @@ fi
 eval "$(mise activate zsh)"
 
 # alias
-alias repo='cd "$(ghq list --full-path | peco)"'
+alias repo='cd "$(ghq list --full-path | fzf)"'
 alias ll-old='ls -laG'
 alias ll='eza --icons --git --time-style relative -al'
 alias tt='tmux'

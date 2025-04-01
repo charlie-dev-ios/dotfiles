@@ -6,6 +6,7 @@ ghq = "latest"
 "aqua:BurntSushi/ripgrep" = "latest"
 tree-sitter = "latest"
 node = "latest"
+"aqua:fzf" = "latest"
 
 [settings]
 experimental = true
