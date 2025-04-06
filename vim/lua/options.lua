@@ -56,7 +56,7 @@ opt.autoread = true
 opt.clipboard:append({"unnamedplus"})
 
 -- マウス操作の有効化
-opt.mouse = a
+opt.mouse = "a"
 
 -- TrueColor
 opt.termguicolors = true
