@@ -32,7 +32,7 @@ opt.smartindent = true
 opt.expandtab = true
 
 -- 新しい行を現在の行のインデントと同じにする
-opt.autoindent = false
+opt.autoindent = true
 
 -- 長い行を画面端で折り返すかどうか
 opt.wrap = true
