@@ -4,7 +4,8 @@ return {
   dependencies = { 'saghen/blink.cmp' },
   opts = {
     servers = {
-      lua_ls = {}
+      lua_ls = {},
+      sourceKit = {}
     }
   },
   config = function(_, opts)
