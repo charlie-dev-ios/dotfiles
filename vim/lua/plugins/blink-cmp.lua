@@ -47,7 +47,7 @@ return {
         auto_show = true,
       },
       ghost_text = {
-        enabled = true,
+        enabled = false,
       },
       documentation = {
         auto_show = true,
