@@ -90,6 +90,7 @@ return {
       dials_by_ft = {
         lua = "lua",
         markdown = "markdown",
+        swift = "swift",
       },
       groups = {
         default = {
@@ -114,6 +115,9 @@ return {
         markdown = {
           augend.misc.alias.markdown_header,
         },
+        swift = {
+          augend.constant.new({ elements = { "let", "var" } }),
+        }
       },
     }
   end,
