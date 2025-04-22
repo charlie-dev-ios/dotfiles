@@ -8,6 +8,7 @@ tree-sitter = "latest"
 node = "latest"
 lua-language-server = "latest"
 "aqua:fzf" = "latest"
+bat = "latest"
 
 [settings]
 experimental = true
