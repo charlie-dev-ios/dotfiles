@@ -5,7 +5,7 @@ initial-setup:
 
 .PHONY: install-brew
 install-brew:
-	sh brew/install-brew.sh
+	sh brew/install_brew.sh
 
 .PHONY: install-brew-packages
 install-brew-packages:
