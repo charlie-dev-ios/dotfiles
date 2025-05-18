@@ -9,6 +9,7 @@ node = "latest"
 lua-language-server = "latest"
 "aqua:fzf" = "latest"
 bat = "latest"
+starship = "latest"
 
 [settings]
 experimental = true

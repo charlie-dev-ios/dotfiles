@@ -7,13 +7,7 @@ set -Ceu
 BASEDIR=$(dirname $0)
 cd $BASEDIR
 
-# prezto自体のインストール
-if ! [ -d "${ZDOTDIR:-$HOME}/.zprezto" ]; then
-    git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-fi
-
-# prezto関係の設定
-RUNCOMS=`find ${PWD} -name ".*" -type f -maxdepth 1`
+RUNCOMS=`find ${PWD} -type f ! -name setup.sh -maxdepth 1`
 for file in $RUNCOMS; do
     # シンボリックリンクを貼る
     ln -snfv $file $HOME
