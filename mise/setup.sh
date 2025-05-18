@@ -7,6 +7,8 @@ set -Ceu
 BASEDIR=$(dirname $0)
 cd $BASEDIR
 
+eval "$(mise activate zsh)"
+
 # グローバル用のconfig.tomlがなければ作成
 MISE_DIR=$HOME/.config/mise
 if ! [ -d $MISE_DIR ]; then
