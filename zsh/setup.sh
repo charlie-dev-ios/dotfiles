@@ -13,5 +13,3 @@ for file in $RUNCOMS; do
     ln -snfv $file $HOME
 done
 
-# p10k用のフォントのインストール
-cp -r ${PWD}/../fonts/ $HOME/Library/Fonts

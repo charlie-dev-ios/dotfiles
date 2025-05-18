@@ -16,8 +16,13 @@ else
 fi
 
 # brewでパッケージのインストール
-# PACKAGE_NAMES=("mise" "tmux" "ghostty" "spotify" "1password" "notion" "raycast" "google-chrome")
+
+# CLI tools
 PACKAGE_NAMES=("mise" "tmux" "ghostty")
+# GUI tools
+# PACKAGE_NAMES+=("spotify" "1password" "notion" "raycast" "google-chrome")
+# fonts
+PACKAGE_NAMES+=("font-meslo-lg-nerd-font")
 
 for PACKAGE_NAME in "${PACKAGE_NAMES[@]}"; do
     if which "${PACKAGE_NAME}" >/dev/null; then
