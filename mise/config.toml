@@ -1,7 +1,6 @@
 [tools]
 neovim = "latest"
 eza = "latest"
-peco = "latest"
 ghq = "latest"
 "aqua:BurntSushi/ripgrep" = "latest"
 tree-sitter = "latest"
@@ -10,6 +9,7 @@ lua-language-server = "latest"
 "aqua:fzf" = "latest"
 bat = "latest"
 starship = "latest"
+fd = "latest"
 
 [settings]
 experimental = true

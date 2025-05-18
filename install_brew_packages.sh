@@ -16,7 +16,8 @@ else
 fi
 
 # brewでパッケージのインストール
-PACKAGE_NAMES=("mise" "tmux" "fd" "alacritty" "ghostty")
+# PACKAGE_NAMES=("mise" "tmux" "ghostty" "spotify" "1password" "notion" "raycast" "google-chrome")
+PACKAGE_NAMES=("mise" "tmux" "ghostty")
 
 for PACKAGE_NAME in "${PACKAGE_NAMES[@]}"; do
     if which "${PACKAGE_NAME}" >/dev/null; then
