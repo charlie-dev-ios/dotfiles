@@ -7,18 +7,6 @@ set -Ceu
 BASEDIR=$(dirname $0)
 cd $BASEDIR
 
-if which brew >/dev/null; then
-    echo "🚀brew is already installed."
-else
-    echo "🚀install brew"
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    if [[ "$(uname -m)" == "arm64" ]]; then
-      eval "$(/opt/homebrew/bin/brew shellenv)"
-    elif [[ "$(uname -m)" == "x86_64" ]]; then
-      eval "$(/usr/local/bin/brew shellenv)"
-    fi
-fi
-
 # brewでパッケージのインストール
 
 # CLI tools
@@ -36,3 +24,5 @@ for PACKAGE_NAME in "${PACKAGE_NAMES[@]}"; do
         brew install ${PACKAGE_NAME}
     fi
 done
+
+echo "💻ターミナルを再起動してください"
