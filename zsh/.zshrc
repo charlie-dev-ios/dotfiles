@@ -12,7 +12,9 @@ eval "$(starship init zsh)"
 # alias
 alias repo='cd "$(ghq list --full-path | fzf)"'
 alias ll-old='ls -laG'
-alias ll='eza --icons --git --time-style relative -al'
+alias ll='eza --long --color=always --color-scale=all --color-scale-mode=gradient --icons --hyperlink \
+--all --ignore-glob=.git \
+--header --time=modified --git --time-style='+%Y/%m/%d %H:%M' --octal-permissions --no-user'
 alias tt='tmux'
 alias vim='nvim'
 alias dotfiles='setup_tmux_dotfiles.sh'
