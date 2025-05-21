@@ -15,5 +15,8 @@ fi
 
 # miseで各CLIをインストール
 ln -snfv ${PWD}/config.toml $HOME/.config/mise/config.toml
+mise trust ${PWD}/config.toml
+
 cd $HOME
 mise i
+mise trust $HOME/.config/mise/config.toml
