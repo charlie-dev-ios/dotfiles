@@ -12,7 +12,7 @@ cd $BASEDIR
 # CLI tools
 PACKAGE_NAMES=("mise" "tmux" "ghostty")
 # GUI tools
-# PACKAGE_NAMES+=("spotify" "1password" "notion" "raycast" "google-chrome")
+# PACKAGE_NAMES+=("spotify" "1password" "notion" "raycast" "google-chrome" "visual-studio-code")
 # fonts
 PACKAGE_NAMES+=("font-meslo-lg-nerd-font")
 
