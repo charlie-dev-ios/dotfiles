@@ -18,6 +18,7 @@ alias ll='eza --long --color=always --color-scale=all --color-scale-mode=gradien
 alias tt='tmux'
 alias vim='nvim'
 alias dotfiles='setup_tmux_dotfiles.sh'
+alias vault='cd $HOME/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents'
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="$HOME/.rd/bin:$PATH"
