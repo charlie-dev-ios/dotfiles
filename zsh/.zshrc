@@ -1,6 +1,6 @@
 # tmux内ではない場合はtmuxを起動
 if [ -z "$TMUX" ]; then
-  tmux new-session -A -s session1
+  tmux new-session -A -s 0
 fi
 
 # mise
