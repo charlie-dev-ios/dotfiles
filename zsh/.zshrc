@@ -20,6 +20,8 @@ alias vim='nvim'
 alias dotfiles='setup_tmux_dotfiles.sh'
 alias vault='cd $HOME/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents'
 
+export EZA_CONFIG_DIR="$HOME/.config/eza"
+
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="$HOME/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

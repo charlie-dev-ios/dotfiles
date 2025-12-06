@@ -20,4 +20,5 @@ setup:
 	sh env/setup.sh
 	sh ghostty/setup.sh
 	sh starship/setup.sh
+	sh eza/setup.sh
 
