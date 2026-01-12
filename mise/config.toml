@@ -10,6 +10,8 @@ lua-language-server = "latest"
 bat = "latest"
 starship = "latest"
 fd = "latest"
+uv = "latest"
+yazi = "latest"
 
 [settings]
 experimental = true

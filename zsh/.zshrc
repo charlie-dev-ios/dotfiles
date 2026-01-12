@@ -12,15 +12,29 @@ eval "$(starship init zsh)"
 # alias
 alias repo='cd "$(ghq list --full-path | fzf)"'
 alias ll-old='ls -laG'
-alias ll='eza --long --color=always --color-scale=all --color-scale-mode=gradient --icons --hyperlink \
---all --ignore-glob=.git \
---header --time=modified --git --time-style='+%Y/%m/%d %H:%M' --octal-permissions --no-user'
+alias ll='eza \
+    --long \
+    --color=always \
+    --color-scale=all \
+    --color-scale-mode=gradient \
+    --icons \
+    --hyperlink \
+    --all \
+    --ignore-glob=.git \
+    --header \
+    --time=modified \
+    --git \
+    --time-style='+%Y/%m/%d %H:%M' \
+    --octal-permissions \
+    --no-user'
 alias tt='tmux'
 alias vim='nvim'
 alias dotfiles='setup_tmux_dotfiles.sh'
 alias vault='cd $HOME/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents'
+alias tta='tt a -t $(tt ls | head -n 1 | cut -d: -f1)'
 
 export EZA_CONFIG_DIR="$HOME/.config/eza"
+export PATH="$HOME/.local/bin:$PATH"
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="$HOME/.rd/bin:$PATH"
