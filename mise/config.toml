@@ -12,6 +12,7 @@ starship = "latest"
 fd = "latest"
 uv = "latest"
 yazi = "latest"
+gh = "latest"
 
 [settings]
 experimental = true
