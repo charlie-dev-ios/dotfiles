@@ -6,6 +6,8 @@ return {
     servers = {
       -- lua_ls settings are handled by lazydev.nvim
       lua_ls = {},
+      -- TypeScript/JavaScript
+      ts_ls = {},
       -- Swift (sourcekit-lsp)
       sourcekit = {
         cmd = {
