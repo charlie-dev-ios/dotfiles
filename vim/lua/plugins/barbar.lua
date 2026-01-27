@@ -15,4 +15,4 @@ return {
       { "<Leader>bc", "<cmd>BufferClose<CR>" },
       { "<Leader>bac", "<cmd>BufferCloseAllButCurrentOrPinned<CR>" },
   },
-} 
+}
