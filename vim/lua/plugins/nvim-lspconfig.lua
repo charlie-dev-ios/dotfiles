@@ -4,8 +4,18 @@ return {
   dependencies = { 'saghen/blink.cmp' },
   opts = {
     servers = {
+      -- lua_ls settings are handled by lazydev.nvim
       lua_ls = {},
-      sourceKit = {}
+      -- Swift (sourcekit-lsp)
+      sourcekit = {
+        cmd = {
+          'sourcekit-lsp',
+          '-Xswiftc', '-sdk',
+          '-Xswiftc', '/Applications/Xcode16.3RC.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.4.sdk',
+          '-Xswiftc', '-target',
+          '-Xswiftc', 'x86_64-apple-ios18.5-simulator',
+        },
+      },
     }
   },
   config = function(_, opts)
@@ -17,23 +27,5 @@ return {
       config.capabilities = require('blink.cmp').get_lsp_capabilities(config.capabilities)
       lspconfig[server].setup(config)
     end
-
-    -- lua_ls settings are handled by lazydev.nvim
-
-    require'lspconfig'.sourcekit.setup {
-      cmd = {
-        'sourcekit-lsp',
-        '-Xswiftc',
-        '-sdk',
-        '-Xswiftc',
-        -- '`xcrun --sdk iphonesimulator --show-sdk-path`',
-        '/Applications/Xcode16.3RC.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.4.sdk',
-        '-Xswiftc',
-        '-target',
-        '-Xswiftc',
-        -- 'x86_64-apple-ios`xcrun --sdk iphonesimulator --show-sdk-platform-version`-simulator',
-        'x86_64-apple-ios18.5-simulator',
-      },
-    }
   end
 }
