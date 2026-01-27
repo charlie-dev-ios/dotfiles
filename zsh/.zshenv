@@ -6,7 +6,7 @@
 #
 
 ENV_DIR="$HOME/.config/env"
-export GITHUB_TOKEN=$(cat ${ENV_DIR}/.github_token)
+# export GITHUB_TOKEN=$(cat ${ENV_DIR}/.github_token)
 
 export HOMEBREW_FORBIDDEN_FORMULA="node python python3 pip npm pnpm yarn claude"
 
