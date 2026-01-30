@@ -74,14 +74,15 @@ return {
     -- when the Rust fuzzy matcher is not available, by using `implementation = "prefer_rust"`
     --
     -- See the fuzzy documentation for more information
-    fuzzy = { implementation = "prefer_rust_with_warning" }
-  },
-  opts_extend = { "sources.default" },
-  cmdline = {
-    completion = {
-      menu = {
-        auto_show = true
+    fuzzy = { implementation = "prefer_rust_with_warning" },
+
+    cmdline = {
+      completion = {
+        menu = {
+          auto_show = true
+        }
       }
     }
-  }
+  },
+  opts_extend = { "sources.default" }
 }
