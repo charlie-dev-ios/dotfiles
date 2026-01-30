@@ -66,7 +66,7 @@ vim.opt.spell = false
 vim.opt.spelllang = { 'en_us' }
 
 -- 組み合わせキー入力のタイムアウト
-vim.o.timeoutlen = 700
+opt.timeoutlen = 700
 
 -- signcolumnを常に表示
-vim.o.signcolumn = 'yes'
+opt.signcolumn = 'yes'

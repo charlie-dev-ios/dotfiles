@@ -5,7 +5,7 @@ return {
     "nvim-tree/nvim-web-devicons",
   },
   lazy = false,
-  prioerity = 1000,
+  priority = 1000,
   keys = {
       { "<Leader>ee", "<cmd>NvimTreeToggle<CR>" },
       { "<Leader>ef", "<cmd>NvimTreeFindFile<CR>" },
